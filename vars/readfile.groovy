@@ -10,13 +10,7 @@ def read_yaml_file(yaml_file) {
 		println ( it.key + " = " + it.value )
 	 }
        
-	yaml_string = """
-                                        age: 18
-                                        city: 'Shanghai'
-                                        isMale: false
-                                        name: 'Lucyyhz'
-                                        """
-	
-	writeFile file:"test.yml", text: yaml_string
+       
+	writeYaml file: test.yml , data: datas
 	
 }
