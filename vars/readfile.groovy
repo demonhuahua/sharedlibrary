@@ -9,8 +9,5 @@ def read_yaml_file(yaml_file) {
 	datas.each {
 		println ( it.key + " = " + it.value )
 	 }
-       
-       
-	writeYaml file: test.yml , data: datas
 	
 }
