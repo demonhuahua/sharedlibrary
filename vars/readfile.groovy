@@ -17,6 +17,6 @@ def read_yaml_file(yaml_file) {
                                         name: 'Lucyyhz'
                                         """
 	
-	writeFile file:"test.yml", text:yamlToString(yaml_string)
+	writeFile file:"test.yml", text: yaml_string
 	
 }
