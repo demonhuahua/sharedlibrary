@@ -9,8 +9,15 @@ def read_yaml_file(yaml_file) {
 	datas.each {
 		println ( it.key + " = " + it.value )
 	 }
+       
+	yaml_string = """
+                                        age: 18
+                                        city: 'Shanghai'
+                                        isMale: false
+                                        name: 'Lucyyhz'
+                                        """
 	
-	writeFile file:"test.yml", text:yamlToString(datas)
+	writeFile file:"test.yml", text:yamlToString(yaml_string)
 	
 }
 
