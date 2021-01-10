@@ -20,10 +20,3 @@ def read_yaml_file(yaml_file) {
 	writeFile file:"test.yml", text:yamlToString(yaml_string)
 	
 }
-
-
-String yamlToString(Object data){
-    def opts = new DumperOptions()
-    opts.setDefaultFlowStyle(BLOCK)
-    return new Yaml(opts).dump(data)
-}
